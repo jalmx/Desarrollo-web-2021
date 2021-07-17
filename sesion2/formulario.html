@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Titulo</h1>
+    <button>Soy un boton</button>
+
+    <form action="/" method="GET">
+
+        <label for="input_name">Nombre</label>
+        <input type="text" id="input_name" disabled placeholder="aqui va el nombre" required name="nombre" autocomplete="on">
+        <label for="input_correo">Correo
+            <input type="email" id="input_correo" placeholder="aqui el correo" autocomplete="email" required name="correo">
+        </label>
+        <label for="">Contraseña</label>
+        <input type="password" autofocus required name="pass">
+        <input type="date">
+        <input type="month">
+        <input type="datetime">
+        <input type="color">
+        <input type="file">
+        <label for="hombre">Hombre
+            <input type="radio" id="hombre">
+        </label>
+        <br>
+        <label for="">Mujer
+            <input type="radio">
+        </label>
+        <br>
+        <label for="">Manzana
+            <input type="checkbox">
+        </label>
+        <br>
+        <label for="">Pera 
+            <input type="checkbox">
+        </label>
+        <label for="">Volumen 
+            <input type="range">
+        </label>
+
+        <textarea name="comentarios" id="comentario" cols="30" rows="10"></textarea>
+        <input type="submit" value="enviar">
+
+        <input type="reset">
+    </form>
+</body>
+</html>
