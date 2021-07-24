@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Meslo";
+    src: local("./fonts/Meslo.ttf") format("ttf");
+  }
+
+html, body{
+    
+    font-family: 'Poppins', sans-serif;
+}
+p{
+   
+   font-style: italic;
+}
+
+section{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    background-color: chocolate;
+}
+article{
+    
+    font-weight: 700;
+    font-family: 'Meslo';
+}
+
+#titulo_sitio{
+    background-color: black;
+    color: brown;
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    line-height: 1;
+    text-shadow: 20px 10px 5px gray;
+    width: 70%;
+    height: 10vh;
+    margin: auto;
+}
+
+.parrafo1{
+    color: white;
+    background-image: url(https://i.pinimg.com/736x/50/88/e9/5088e9143162f41ea50cf15c43bedda9.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.parrafo2{
+
+}
+
+.parrafo3{
+    background-color: peru;
+}
+
+/* .img{
+    width: 80%;
+} */
+
+article{
+    background-color: yellowgreen;
+}
+section, p, article{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+}
+
+ul  a{
+    color: red;
+    letter-spacing: 2px;
+}
+
+.menu.enlaces{
+    background-color: thistle;
+}
+
+a[href*='google.com.']{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+a[href*='.mx']{
+    background-color: green;
+    color: white;
+}
+
+li:hover{
+    background-color: darkorange;
+    padding: 0.5rem;
+    margin-left: 30px;
+  
+}
+
+p:active{
+    color: aqua;
+}
+
+a:visited{
+    color: yellow;
+}
+
+p{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    margin: 2rem;
+
+    /* border: 10px solid black; */
+
+    border-style: dotted;
+    border-width: 10px;
+    border-color:brown;
+    border-top-color: blueviolet;
+    border-right-width: 0;
+
+    border-radius: 20px;
+}
+
+
+article{
+    box-sizing: border-box;
+    width: 800px;
+    height: 100px;
+    padding: 16px;
+    border-style: solid;
+    border-width: 5px;
+    overflow: auto;
+}
+
+h1::before{
+    content: "♥";
+    color: red;
+}
+h1::after{
+    content: '♥';
+    color: white;
+}
+
+.icons8-apple-logo { 
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgaWQ9Im9yaWdpbmFsLWljb24iIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGQ9Ik0xMTUuNTYyNSw3LjE2NjY3Yy04LjI2MzE3LDAuNDgwMTcgLTE3Ljc0OTQ4LDUuMDgzNjMgLTIzLjM4OTY1LDEwLjk0NTk2Yy01LjA5NTUsNS4zMzIgLTkuMTE1NzgsMTMuMjUwOTQgLTcuNDc0NjEsMjAuOTEyMTFjOC45Nzk4MywwLjIzNjUgMTcuOTkzMTUsLTQuNDg2MjIgMjMuMzg5NjUsLTEwLjQ1NjA1YzUuMDM4MTcsLTUuNTgyODMgOC44NTc3OCwtMTMuMzc1MzUgNy40NzQ2MSwtMjEuNDAyMDJ6TTExNi4wNTI0MSwzOS4wMTA3NGMtMTIuOTY0NSwwIC0xOC4zODUwNyw3Ljk2NDUyIC0yNy4zNjQ5MSw3Ljk2NDUyYy05LjIzNzgzLDAgLTE3LjY4MjYzLC03LjQ2MDYxIC0yOC44NjI2MywtNy40NjA2MWMtMTUuMjA3NjcsMC4wMDcxNyAtMzguMzI0ODcsMTQuMDk0MzcgLTM4LjMyNDg3LDQ3LjI4MzJjMCwzMC4xOTMxNyAyNy4zNTk4Nyw2My43MDIxNSA0Mi44MDQwNCw2My43MDIxNWM5LjM4MTE3LDAuMDkzMTcgMTEuNjU1NDYsLTUuODk4MzkgMjQuMzgzNDYsLTUuOTYyODljMTIuNzQyMzMsLTAuMDkzMTcgMTUuNDkxODcsNi4wNDE3MiAyNC44ODczNyw1Ljk2Mjg5YzEwLjU3OCwtMC4wNzg4MyAxOC44MzkwNCwtMTEuNzAyOTQgMjQuODczMzcsLTIwLjkxMjExYzQuMzI4NjcsLTYuNTkzMzMgNi4xMDgyNCwtOS45NTk0MiA5LjQ2MjI0LC0xNy40MTI3NmMtMjQuODg5ODMsLTYuMzA2NjcgLTI5Ljg0MiwtNDYuNDQ0ODIgMCwtNTQuNzQzODJjLTUuNjMzLC05LjYxMDUgLTIyLjA3NTU4LC0xOC40MjA1NyAtMzEuODU4MDgsLTE4LjQyMDU3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat;
+    background-size: 100%; 
+}
+
+div{
+    width: 250px;
+    height: 250px;
+    background-color: coral;
+    border-radius: 50%;
+    
+}
