@@ -1,14 +1,173 @@
 /* reseto propio */
 *,
 ::after,
-::before{
-    margin: 0;padding: 0;
-    box-sizing: border-box;
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  /* este sera el valor de 1rem */
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+}
 
-html{
-    /* este sera el valor de 1rem */
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
+main {
+  max-width: 1200px;
+  padding: 1rem;
+  margin: auto;
+}
+.section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo_container {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo_container img {
+  height: 100%;
+}
+
+.name_person,
+.titulo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.name_person {
+  font-size: 3rem;
+}
+
+.titulo {
+}
+
+.contact {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 0.5rem;
+}
+
+.contact li {
+  padding: 0.5rem;
+  list-style: none;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.contact li:hover {
+  background-color: antiquewhite;
+}
+
+.contact li a {
+    color: black;
+    display: block;
+    width: 100%;
+}
+
+.mini_section {
+  width: 100%;
+}
+
+.mini_section_title {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mini_section_title::after,
+.mini_section_title::before {
+  content: "";
+  display: block;
+  background-color: gray;
+  height: 2px;
+  margin: 0.3rem 0;
+}
+
+.mini_section_subtitle {
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.education_uni,
+.education_year {
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  font-size: 1.15rem;
+}
+
+.education_description {
+  padding-bottom: 2rem;
+}
+
+.list-skill {
+  padding: 1rem 0;
+}
+
+.list-skill li {
+  list-style: none;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.parrafo {
+  padding: 0.5rem 0;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.work_section {
+  padding: 1rem 0;
+}
+.work_position,
+.work_company {
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.work_position {
+  text-transform: uppercase;
+}
+
+.footer_main{
+    width: 100%;
+    background-color: black;
+    padding: 2rem;
+    color: #eee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    main{
+        display: flex;
+    }
+
+    .paddin-left{
+        padding-left: 1rem;
+        
+    }
+    .paddin-right{
+        padding-right: 1rem;
+    }
+    
 }
